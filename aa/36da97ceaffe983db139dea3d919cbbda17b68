@@ -1,0 +1,57 @@
+projects/ui/src/public-api.ts
+  s_19dc441b83c23a::t_f8c60eec2d958c 5-8
+projects/ui/src/lib/tooltip/tooltip.provider.ts
+  s_19dc441b83c23a::t_31bdc9de19143d 1-28
+package.json
+  s_19dc441b83c23a::t_767589ee5608b1 25
+projects/ui/README.md
+  s_19dc441b83c23a::t_e8811a7757d3bc 65-67,69-70,72-107,109-122
+  s_19dc441b83c23a::t_a18b92972ad3fe 68,71,108
+projects/ui/src/lib/tooltip/tooltip.ts
+  s_19dc441b83c23a::t_f8c60eec2d958c 15,55,77-79,95-99,106,134-149,175,199,216,218-237,241-244
+  s_19dc441b83c23a::t_31bdc9de19143d 1-14,16-54,56-76,80-94,101-105,107-133,150-174,176-198,200-215,217,238-240,245-262
+  s_19dc441b83c23a::t_b3c7f9ac7203d0 100
+projects/ui/src/lib/helpers/overlay.ts
+  s_19dc441b83c23a::t_31bdc9de19143d 1-108
+tsconfig.json
+  h_aa1f579535d063 4
+projects/ui/src/lib/tooltip/tooltip-content.html
+  s_19dc441b83c23a::t_31bdc9de19143d 1-9
+projects/ui/src/lib/tooltip/tooltip-content.ts
+  s_19dc441b83c23a::t_31bdc9de19143d 1-19,21-108
+  s_19dc441b83c23a::t_f8c60eec2d958c 20
+projects/ui/src/lib/tooltip/tooltip-content.spec.ts
+  s_19dc441b83c23a::t_f8c60eec2d958c 37-38
+  s_19dc441b83c23a::t_31bdc9de19143d 1-36,39-55
+projects/ui/package.json
+  s_19dc441b83c23a::t_f8c60eec2d958c 8-9
+projects/ui/src/lib/tooltip/tooltip.spec.ts
+  s_19dc441b83c23a::t_9c13204f3954d8 285-335
+  s_19dc441b83c23a::t_31bdc9de19143d 1-113,117-284,336-344
+  s_19dc441b83c23a::t_f8c60eec2d958c 114-116
+projects/ui/src/css/styles.css
+  s_19dc441b83c23a::t_f8c60eec2d958c 2
+bun.lock
+  s_19dc441b83c23a::t_a36c62bd73bb41 8,77-78
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "aa36da97ceaffe983db139dea3d919cbbda17b68",
+  "prompts": {},
+  "humans": {
+    "h_aa1f579535d063": {
+      "author": "Celtian <dominik.hladik@seznam.cz>"
+    }
+  },
+  "sessions": {
+    "s_19dc441b83c23a": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0feb0-35ad-7451-a4ba-dcbcc0cf1785",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Celtian <dominik.hladik@seznam.cz>"
+    }
+  }
+}
