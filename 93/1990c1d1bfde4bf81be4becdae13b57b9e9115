@@ -1,0 +1,60 @@
+projects/ui/src/lib/logo/logo.html
+  h_aa1f579535d063 9-48
+  s_b67b6a990aaff5::t_4b60df209f7552 1-8
+projects/ui/src/lib/logo/logo.ts
+  s_b67b6a990aaff5::t_4d6097691c712f 7-17
+  h_aa1f579535d063 1-6,18-21
+tsconfig.json
+  h_aa1f579535d063 18,34-39
+  s_b67b6a990aaff5::t_4d6097691c712f 19
+angular.json
+  h_aa1f579535d063 9-23,93-122
+  h_aa1f579535d063 123-125
+projects/portal/src/app/app.ts
+  s_b67b6a990aaff5::t_4d6097691c712f 1,5-6,11
+projects/portal/src/app/app.html
+  s_b67b6a990aaff5::t_4d6097691c712f 4
+projects/ui/src/public-api.ts
+  h_aa1f579535d063 1
+projects/portal/src/app/app.css
+  s_b67b6a990aaff5::t_4d6097691c712f 15-17,55
+bun.lock
+  h_aa1f579535d063 26,31,531-580,665-666,671-672,693-694,725-726,739-740,753,769,795-796,799-800,821-822,847,863-864,885-886,909-910,947-948,959-960,963-964,991-994,1029-1030,1051-1052,1073-1074,1079-1080,1107-1108,1113-1114,1163-1164,1187-1188,1305-1310,1347-1348,1371,1373,1401-1402,1409-1414,1419-1420,1429-1430,1437-1438,1525-1544,1565-1566,1568-1569
+package.json
+  h_aa1f579535d063 43,48
+projects/ui/README.md
+  h_aa1f579535d063 1-64
+projects/ui/eslint.config.js
+  h_aa1f579535d063 1-32
+projects/ui/ng-package.json
+  h_aa1f579535d063 1-7
+projects/ui/package.json
+  h_aa1f579535d063 1-12
+projects/ui/tsconfig.lib.json
+  h_aa1f579535d063 1-13
+projects/ui/tsconfig.lib.prod.json
+  h_aa1f579535d063 1-11
+projects/ui/tsconfig.spec.json
+  h_aa1f579535d063 1-10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "931990c1d1bfde4bf81be4becdae13b57b9e9115",
+  "prompts": {},
+  "humans": {
+    "h_aa1f579535d063": {
+      "author": "Celtian <dominik.hladik@seznam.cz>"
+    }
+  },
+  "sessions": {
+    "s_b67b6a990aaff5": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0fe38-73c7-7b12-a3d4-d711c845b4c9",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Celtian <dominik.hladik@seznam.cz>"
+    }
+  }
+}
