@@ -7,3 +7,4 @@ export * from './lib/tooltip/tooltip';
 export * from './lib/tooltip/tooltip-content';
 export * from './lib/tooltip/tooltip.provider';
 export * from './lib/spinner/spinner';
+export * from './lib/update-app/update-app.service';

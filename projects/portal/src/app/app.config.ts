@@ -1,5 +1,10 @@
 import { provideHttpClient } from '@angular/common/http';
-import { ApplicationConfig, isDevMode, provideBrowserGlobalErrorListeners } from '@angular/core';
+import {
+  ApplicationConfig,
+  inject,
+  isDevMode,
+  provideBrowserGlobalErrorListeners,
+} from '@angular/core';
 import {
   provideRouter,
   withComponentInputBinding,
@@ -10,8 +15,10 @@ import {
 import { provideServiceWorker } from '@angular/service-worker';
 
 import { provideAppVersion } from 'ngx-app-version';
+import { provideUpdateApp } from 'ngx-update-app';
 
 import { VERSION_INFO } from '@/generated/version-info';
+import { UpdateAppService } from '@/ui';
 
 import { routes } from './app.routes';
 import { provideTitle } from './providers/title';
@@ -21,6 +28,14 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(),
     provideBrowserGlobalErrorListeners(),
     provideAppVersion({ version: VERSION_INFO.version }),
+    provideUpdateApp({
+      interval: 60_000,
+      dryRun: false,
+      onUpdateFactory: () => {
+        const prompt = inject(UpdateAppService);
+        return () => void prompt.open();
+      },
+    }),
     provideRouter(
       routes,
       withComponentInputBinding(),

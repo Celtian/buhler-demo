@@ -3,6 +3,7 @@ import { Component, DestroyRef, computed, inject, signal } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
 import { NgxAppVersionDirective } from 'ngx-app-version';
+import { NgxUpdateAppDirective } from 'ngx-update-app';
 
 import { Icon, Logo } from '@/ui';
 
@@ -11,7 +12,7 @@ import { Icon, Logo } from '@/ui';
   imports: [DatePipe, Logo, Icon, RouterLink, RouterOutlet],
   templateUrl: './app.html',
   host: { class: 'flex flex-col min-h-screen' },
-  hostDirectives: [NgxAppVersionDirective],
+  hostDirectives: [NgxAppVersionDirective, NgxUpdateAppDirective],
 })
 export class App {
   protected readonly now = signal(new Date());
