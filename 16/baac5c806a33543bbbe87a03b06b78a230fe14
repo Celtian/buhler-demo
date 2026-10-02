@@ -1,0 +1,55 @@
+package.json
+  s_2b00ed0cb7f6e6::t_08473bc8d0979f 37
+  h_aa1f579535d063 10
+  s_2b00ed0cb7f6e6::t_6bf8bbd3508910 32,40
+  s_2b00ed0cb7f6e6::t_5c4fac91cd9614 26,30,33
+  s_2b00ed0cb7f6e6::t_45e9868de205c1 34
+  s_2c74e94887d785::t_16b5ac295da663 44
+eslint.config.js
+  s_2b00ed0cb7f6e6::t_5c4fac91cd9614 1-33,41-46,68-70
+  h_aa1f579535d063 34-40,47-67
+projects/portal/eslint.config.js
+  s_2b00ed0cb7f6e6::t_5c4fac91cd9614 1-32
+projects/portal/src/app/app.ts
+  h_aa1f579535d063 6,8
+.prettierrc
+  h_aa1f579535d063 4,6-9
+  s_2b00ed0cb7f6e6::t_d18bea171a14ae 5
+angular.json
+  s_2b00ed0cb7f6e6::t_5c4fac91cd9614 6-7,69-75
+.lintstagedrc.json
+  s_2c74e94887d785::t_e5adeafb57d7d6 1-4
+bun.lock
+  s_2b00ed0cb7f6e6::t_ef862540afebdf 18,22,24-26,29,32,36,52-65,94,98,100,102,108,112,114,120-123,188-203,208-217,260-263,464-465,470-471,478-499,506-509,512,516-517,524-525,528-531,540-541,546-547,572-573,586-587,616-631,634-635,640-643,654-661,672-673,678-681,694-695,700-701,714-717,726-728,734-737,762-763,768-771,784-785,798-799,814-815,822-829,836-839,852-853,856-857,864-865,926-929,934,944-945,950-951,976-977,980-981,984-985,990-991,1012-1013,1016-1017,1028-1029,1034-1035,1040-1042,1046-1055,1058-1070,1090-1095,1102-1105,1108-1119,1122-1141,1163-1182
+.husky/pre-commit
+  h_aa1f579535d063 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "16baac5c806a33543bbbe87a03b06b78a230fe14",
+  "prompts": {},
+  "humans": {
+    "h_aa1f579535d063": {
+      "author": "Celtian <dominik.hladik@seznam.cz>"
+    }
+  },
+  "sessions": {
+    "s_2b00ed0cb7f6e6": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0fcaa-c7fb-7e33-92d3-41deafb176c9",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Celtian <dominik.hladik@seznam.cz>"
+    },
+    "s_2c74e94887d785": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0fcb4-d5c1-7720-ad07-def3cc02bddd",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Celtian <dominik.hladik@seznam.cz>"
+    }
+  }
+}
