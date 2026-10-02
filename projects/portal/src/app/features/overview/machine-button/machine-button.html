@@ -1,0 +1,22 @@
+<button
+  ui-button
+  type="button"
+  [layout]="view()"
+  [color]="buttonColor()"
+  [active]="selected()"
+  [class]="buttonClass()"
+  [class.selected]="selected()"
+  [attr.aria-label]="accessibleLabel()"
+  [attr.aria-pressed]="selected()"
+  (click)="choose.emit(machine().id)"
+>
+  <ui-icon
+    class="state-icon absolute top-2 right-2 size-5"
+    [class.text-machine-running]="machine().state.id === 'running'"
+    [name]="machine().state.icon"
+  />
+  @if (view() === 'tile') {
+    <ui-icon class="machine-icon size-12" [name]="machine().icon" />
+  }
+  <span>{{ machine().name }}</span>
+</button>

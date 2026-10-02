@@ -1,9 +1,9 @@
-@import 'tailwindcss';
+@import '../../ui/src/css/styles.css';
 
 body {
   margin: 0;
-  color: #202020;
-  background: #fff;
+  color: var(--color-text);
+  background: var(--color-canvas);
   font-family: Arial, Helvetica, sans-serif;
 }
 button,
@@ -11,6 +11,6 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 :focus-visible {
-  outline: 3px solid #005b55;
+  outline: 3px solid var(--color-focus);
   outline-offset: 4px;
 }

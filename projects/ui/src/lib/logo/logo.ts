@@ -17,5 +17,5 @@ import { Component } from '@angular/core';
   `,
 })
 export class Logo {
-  public readonly primaryColor = '#00a89c';
+  public readonly primaryColor = 'var(--color-primary-500, #00a89c)';
 }

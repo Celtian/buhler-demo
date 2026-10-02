@@ -5,7 +5,7 @@
 }
 .machine-navigation {
   display: flex;
-  background: #ddd;
+  background: var(--color-surface);
 }
 .overview {
   display: flex;
@@ -31,7 +31,7 @@ li {
 li::after {
   flex: 1;
   height: 3px;
-  background: #398000;
+  background: var(--color-machine-connector);
   content: '';
 }
 li:last-child {
@@ -53,8 +53,8 @@ li:last-child::after {
 .retry {
   min-height: 44px;
   padding: 8px 24px;
-  color: #fff;
-  background: #005b55;
+  color: var(--color-canvas);
+  background: var(--color-focus);
   cursor: pointer;
 }
 @media (max-width: 600px) {

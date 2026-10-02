@@ -5,8 +5,8 @@
   gap: 24px;
   min-height: 80px;
   padding: 20px 24px;
-  border-bottom: 4px solid #009b91;
-  background: #ddd;
+  border-bottom: 4px solid var(--color-primary-500);
+  background: var(--color-surface);
 }
 .brand {
   display: inline-flex;
@@ -39,8 +39,8 @@ main {
   left: 8px;
   z-index: 10;
   padding: 12px;
-  color: #fff;
-  background: #005b55;
+  color: var(--color-canvas);
+  background: var(--color-focus);
   transform: translateY(-200%);
 }
 .skip-link:focus {
