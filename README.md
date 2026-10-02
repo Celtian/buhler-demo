@@ -46,6 +46,17 @@ ng build
 
 This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
+## Progressive web app
+
+The portal includes Angular service worker support, a web app manifest, and install icons,
+generated with `ng add @angular/pwa --project portal`. The service worker is enabled in
+production builds and disabled during development.
+
+Build with `bun run ng build portal` and serve `dist/portal/browser` over HTTPS (or localhost)
+to test installation and offline use. After the first successful load and service worker
+activation, the application shell and machine JSON fixtures are available offline. Image
+assets are cached when first requested. The included install icons are Angular CLI defaults.
+
 ## Running unit tests
 
 To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:

@@ -1,5 +1,5 @@
 import { provideHttpClient } from '@angular/common/http';
-import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
+import { ApplicationConfig, isDevMode, provideBrowserGlobalErrorListeners } from '@angular/core';
 import {
   provideRouter,
   withComponentInputBinding,
@@ -7,6 +7,7 @@ import {
   withRouterConfig,
   withViewTransitions,
 } from '@angular/router';
+import { provideServiceWorker } from '@angular/service-worker';
 
 import { provideAppVersion } from 'ngx-app-version';
 
@@ -30,5 +31,9 @@ export const appConfig: ApplicationConfig = {
       }),
     ),
     provideTitle(),
+    provideServiceWorker('ngsw-worker.js', {
+      enabled: !isDevMode(),
+      registrationStrategy: 'registerWhenStable:30000',
+    }),
   ],
 };

@@ -57,7 +57,8 @@
                   "maximumError": "8kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "serviceWorker": "projects/portal/ngsw-config.json"
             },
             "development": {
               "optimization": false,
