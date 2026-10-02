@@ -1,0 +1,38 @@
+.codex/config.toml
+  h_aa1f579535d063 1-3
+.editorconfig
+  h_aa1f579535d063 1-17
+.gitignore
+  h_aa1f579535d063 1-44
+.prettierrc
+  h_aa1f579535d063 1-12
+.vscode/extensions.json
+  h_aa1f579535d063 1-4
+.vscode/launch.json
+  h_aa1f579535d063 1-20
+.vscode/tasks.json
+  h_aa1f579535d063 1-42
+AGENTS.md
+  h_aa1f579535d063 1-59
+README.md
+  h_aa1f579535d063 1-59
+angular.json
+  h_aa1f579535d063 1-10
+bun.lock
+  h_aa1f579535d063 1-352
+package.json
+  h_aa1f579535d063 1-29
+tsconfig.json
+  h_aa1f579535d063 1-23
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "04604ae2d809ae516e689f9ccb5c23deccd4236c",
+  "prompts": {},
+  "humans": {
+    "h_aa1f579535d063": {
+      "author": "Celtian <dominik.hladik@seznam.cz>"
+    }
+  }
+}
