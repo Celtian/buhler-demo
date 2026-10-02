@@ -1,11 +1,13 @@
 import { Component, ElementRef, afterRenderEffect, inject, signal, viewChild } from '@angular/core';
 
+import { Spinner } from '@/ui';
+
 import { ProductionLine } from '../../../services/production-line';
 import { MachineButton } from '../machine-button/machine-button';
 
 @Component({
   selector: 'app-overview-page',
-  imports: [MachineButton],
+  imports: [MachineButton, Spinner],
   templateUrl: './overview-page.html',
   host: { class: 'flex flex-1 flex-col' },
 })

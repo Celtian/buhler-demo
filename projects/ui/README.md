@@ -120,3 +120,24 @@ and never move focus. Provide a focusable trigger when keyboard access is needed
 Include the shared UI stylesheet (`projects/ui/src/css/styles.css` in this
 workspace). It supplies theme tokens, Tailwind utilities, and the required CDK
 overlay styles. The portal already imports it.
+
+## Spinner
+
+Import `Spinner` from `@/ui` into the consuming component's `imports`:
+
+```ts
+import { Component } from '@angular/core';
+
+import { Spinner } from '@/ui';
+
+@Component({
+  imports: [Spinner],
+  template: `<ui-spinner size="sm" loadingText="Loading machines" />`,
+})
+export class LoadingMachines {}
+```
+
+Sizes are `xs` (16px), `sm` (24px), `md` (32px, default), and `lg`
+(40px). `loadingText` defaults to `Loading` and is trimmed for screen readers.
+The spinner announces a polite loading status and respects reduced motion.
+Include the shared UI stylesheet for its colors, sizes, and animation.

@@ -6,3 +6,4 @@ export * from './lib/helpers/overlay';
 export * from './lib/tooltip/tooltip';
 export * from './lib/tooltip/tooltip-content';
 export * from './lib/tooltip/tooltip.provider';
+export * from './lib/spinner/spinner';

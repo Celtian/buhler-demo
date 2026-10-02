@@ -1,10 +1,8 @@
 <h1 class="sr-only">Production line overview</h1>
 @if (line.loading()) {
-  <div
-    class="grid min-h-110 flex-1 content-center justify-items-center gap-5 p-8 text-center"
-    role="status"
-  >
-    Loading production line…
+  <div class="grid min-h-110 flex-1 content-center justify-items-center gap-5 p-8 text-center">
+    <ui-spinner size="lg" loadingText="Loading production line…" />
+    <p aria-hidden="true">Loading production line…</p>
   </div>
 } @else if (line.error()) {
   <div class="grid min-h-110 flex-1 content-center justify-items-center gap-5 p-8 text-center">
