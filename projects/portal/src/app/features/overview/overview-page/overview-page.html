@@ -21,7 +21,7 @@
 } @else {
   <nav
     #machineNavigation
-    class="flex bg-surface [@media(max-width:600px)]:grid [@media(max-width:600px)]:grid-cols-2"
+    class="flex bg-surface max-sm:grid max-sm:grid-cols-2"
     aria-label="Production line machines"
   >
     @for (machine of line.machines(); track machine.id) {
@@ -34,15 +34,13 @@
     }
   </nav>
   <section
-    class="flex min-h-110 flex-1 items-center px-11 py-16 [@media(max-width:600px)]:px-6 [@media(max-width:600px)]:py-10"
+    class="flex min-h-110 flex-1 items-center px-11 py-16 max-sm:px-6 max-sm:py-10"
     aria-label="Connected production line"
   >
-    <ol
-      class="mx-auto flex w-full max-w-275 list-none items-center p-0 [@media(max-width:600px)]:flex-col"
-    >
+    <ol class="mx-auto flex w-full max-w-275 list-none items-center p-0 max-sm:flex-col">
       @for (machine of line.machines(); track machine.id) {
         <li
-          class="flex flex-1 items-center after:h-0.75 after:flex-1 after:bg-machine-connector after:content-[''] last:flex-none last:after:hidden [@media(max-width:600px)]:flex-none [@media(max-width:600px)]:flex-col [@media(max-width:600px)]:after:h-8 [@media(max-width:600px)]:after:w-0.75 [@media(max-width:600px)]:after:flex-none"
+          class="flex flex-1 items-center after:h-0.75 after:flex-1 after:bg-machine-connector after:content-[''] last:flex-none last:after:hidden max-sm:flex-none max-sm:flex-col max-sm:after:h-8 max-sm:after:w-0.75 max-sm:after:flex-none"
         >
           <app-machine-button
             [machine]="machine"

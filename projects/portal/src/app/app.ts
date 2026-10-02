@@ -8,7 +8,6 @@ import { Icon, Logo } from '@/ui';
   selector: 'app-root',
   imports: [DatePipe, Logo, Icon, RouterLink, RouterOutlet],
   templateUrl: './app.html',
-  styleUrl: './app.css',
   host: { class: 'flex flex-col min-h-screen' },
 })
 export class App {

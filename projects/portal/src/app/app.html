@@ -1,19 +1,31 @@
-<a class="skip-link" href="#main-content">Skip to production line</a>
-<header class="app-header">
-  <a class="brand" routerLink="/overview" aria-label="Bühler production line overview">
-    <ui-logo />
+<header
+  class="sticky top-0 z-10 flex h-20 shrink-0 items-center justify-between border-b-4 border-primary-500 bg-surface sm:gap-6"
+>
+  <a
+    class="group relative inline-flex shrink-0 items-center self-stretch px-6 py-4 focusable focus:outline-none! max-sm:px-4"
+    routerLink="/overview"
+    aria-label="Bühler production line overview"
+  >
+    <span
+      aria-hidden="true"
+      class="pointer-events-none absolute inset-2 rounded-lg transition-colors duration-150 group-hover:bg-primary-500/10 group-focus-visible:bg-primary-500/10 group-focus-visible:ring-2 group-focus-visible:ring-focus motion-reduce:transition-none"
+    ></span>
+    <ui-logo class="relative w-49 max-sm:w-39" />
   </a>
-  <div class="header-details">
-    <div class="clock">
+  <div class="flex shrink-0 items-center text-[14px] font-semibold max-sm:text-[12px]">
+    <div class="flex items-center gap-2 px-6 py-5 whitespace-nowrap max-sm:px-4">
       <ui-icon name="schedule" />
-      <time [attr.datetime]="timestamp()">{{ now() | date: 'dd.MM.yyyy HH:mm' }}</time>
+      <time [attr.datetime]="timestamp()">
+        <span class="max-sm:hidden">{{ now() | date: 'dd.MM.yyyy' }} </span>
+        {{ now() | date: 'HH:mm' }}
+      </time>
     </div>
-    <div class="operator">
+    <div class="flex items-center gap-2 px-6 py-5 max-sm:hidden">
       <ui-icon name="account_circle" />
       <span>Operator</span>
     </div>
   </div>
 </header>
-<main id="main-content" tabindex="-1">
+<main class="flex flex-1 flex-col">
   <router-outlet />
 </main>
