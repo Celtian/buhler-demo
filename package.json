@@ -16,7 +16,7 @@
     "lint": "ng lint",
     "prepare": "husky",
     "postinstall": "bun run create-version",
-    "check-circular-dependencies": "madge --circular --ts-config tsconfig.json ./libs/*/src/public-api.ts",
+    "check-circular-dependencies": "madge --circular --ts-config tsconfig.json ./projects/*/src/public-api.ts",
     "create-version": "package-version-info -o generated/version-info.ts -g .git"
   },
   "private": true,
