@@ -1,0 +1,46 @@
+projects/portal/src/app/features/overview/machine-button/machine-button.ts
+  s_bbf7772e5f1e03::t_5e9914335bee14 3,9,19
+  s_bbf7772e5f1e03::t_d4c1cc7da1bcd0 21
+  s_bbf7772e5f1e03::t_c69a2ebb558388 4
+package.json
+  s_e89c5961b948da::t_fc59501f36088c 31-32
+projects/ui/package.json
+  s_bbf7772e5f1e03::t_c69a2ebb558388 6-8
+projects/portal/src/app/app.html
+  s_bbf7772e5f1e03::t_d4c1cc7da1bcd0 8,12
+projects/portal/src/app/app.ts
+  s_bbf7772e5f1e03::t_5e9914335bee14 5,9
+projects/ui/src/public-api.ts
+  s_bbf7772e5f1e03::t_5e9914335bee14 2
+projects/ui/src/lib/icon/icon.ts
+  s_bbf7772e5f1e03::t_5e9914335bee14 3-39,42-44,54-56
+projects/portal/src/app/services/production-line.models.ts
+  s_bbf7772e5f1e03::t_5e9914335bee14 1,9,16
+  s_bbf7772e5f1e03::t_c69a2ebb558388 2
+bun.lock
+  s_e89c5961b948da::t_0294288b12bba5 14-15,341-344
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "f01c27f78b597ab5dd6ee94ce4930320d31f75f6",
+  "prompts": {},
+  "sessions": {
+    "s_bbf7772e5f1e03": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0fe61-6ff3-7501-b50b-89f21c782a56",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Celtian <dominik.hladik@seznam.cz>"
+    },
+    "s_e89c5961b948da": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0fe5c-4fbf-73f0-9ee9-02a98fc15823",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Celtian <dominik.hladik@seznam.cz>"
+    }
+  }
+}
