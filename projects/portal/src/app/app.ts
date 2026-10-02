@@ -2,6 +2,8 @@ import { DatePipe } from '@angular/common';
 import { Component, DestroyRef, computed, inject, signal } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
+import { NgxAppVersionDirective } from 'ngx-app-version';
+
 import { Icon, Logo } from '@/ui';
 
 @Component({
@@ -9,6 +11,7 @@ import { Icon, Logo } from '@/ui';
   imports: [DatePipe, Logo, Icon, RouterLink, RouterOutlet],
   templateUrl: './app.html',
   host: { class: 'flex flex-col min-h-screen' },
+  hostDirectives: [NgxAppVersionDirective],
 })
 export class App {
   protected readonly now = signal(new Date());

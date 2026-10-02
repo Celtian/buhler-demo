@@ -15,6 +15,7 @@
         "@ng-icons/core": "^36.1.0",
         "@ng-icons/material-icons": "^36.1.0",
         "class-variance-authority": "^0.7.1",
+        "ngx-app-version": "^3.0.1",
         "rxjs": "^7.8.2",
         "tailwind-merge": "^3.7.0",
         "tslib": "^2.8.1",
@@ -1009,6 +1010,8 @@
     "needle": ["needle@3.5.0", "", { "dependencies": { "iconv-lite": "^0.6.3", "sax": "^1.2.4" }, "bin": { "needle": "bin/needle" } }, "sha512-jaQyPKKk2YokHrEg+vFDYxXIHTCBgiZwSHOoVx/8V3GIBS8/VN6NdVRmg8q1ERtPkMvmOvebsgga4sAj5hls/w=="],
 
     "ng-packagr": ["ng-packagr@22.2.4", "", { "dependencies": { "@ampproject/remapping": "^2.3.0", "ajv": "^8.17.1", "browserslist": "^4.26.0", "chokidar": "^5.0.0", "commander": "^15.0.0", "dependency-graph": "^1.0.0", "esbuild": "^0.28.2", "find-cache-directory": "^6.0.0", "injection-js": "^2.4.0", "jsonc-parser": "^3.3.1", "less": "^4.2.0", "ora": "^9.0.0", "postcss": "^8.4.47", "rolldown": "^1.2.0", "rolldown-plugin-dts": "^0.28.0", "rxjs": "^7.8.1", "sass": "^1.103.1", "sass-embedded": "^1.103.1", "tinyglobby": "^0.2.12" }, "peerDependencies": { "@angular/compiler-cli": "^22.0.0 || ^22.2.0-next || ^22.3.0-next", "tailwindcss": "^2.0.0 || ^3.0.0 || ^4.0.0", "tslib": "^2.3.0", "typescript": ">=6.0 <6.1" }, "optionalPeers": ["tailwindcss"], "bin": { "ng-packagr": "src/cli/main.js" } }, "sha512-P7nklZYs3BHG0QtDkhE7tYYPBRkWQhEf+aK5/zz9Rfc7mc2MHfIcN8ZtEHzMIEaKbgoQgUjnGZPRoCr5isB7ig=="],
+
+    "ngx-app-version": ["ngx-app-version@3.0.1", "", { "dependencies": { "tslib": "^2.3.0" }, "peerDependencies": { "@angular/core": ">=22" } }, "sha512-V/9zOXuEpkMC/5ASA8/5lMlUuXu0o9KJchxIQM99GJDrgK6LYzmrxa0n8q5BzS9H7CXp3IskOz01aXgumn5VBw=="],
 
     "node-addon-api": ["node-addon-api@6.1.0", "", {}, "sha512-+eawOlIgy680F0kBzPUNFhMZGtJ1YmqM6l4+Crf4IkImjYrO/mqPwRMh352g23uIaQKFItcQ64I7KMaJxHgAVA=="],
 
