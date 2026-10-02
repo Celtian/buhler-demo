@@ -1,0 +1,39 @@
+package.json
+  s_b802732e87b771::t_151cbd582f2e6a 37
+projects/portal/src/app/app.config.ts
+  s_b802732e87b771::t_2539ab16a8ba01 2-7
+  s_b802732e87b771::t_1364778b5cbbcf 18,31-32,34,36-38
+  h_aa1f579535d063 33
+  s_b802732e87b771::t_0804dd51180354 21,35
+projects/ui/src/lib/update-app/update-app.service.ts
+  s_b802732e87b771::t_0804dd51180354 1-48
+projects/ui/src/lib/update-app/update-app.ts
+  s_b802732e87b771::t_0804dd51180354 1-64
+projects/ui/src/public-api.ts
+  s_b802732e87b771::t_0804dd51180354 10
+projects/portal/src/app/app.ts
+  s_b802732e87b771::t_1364778b5cbbcf 6,15
+bun.lock
+  s_b802732e87b771::t_e97fb319ee505e 20,1020-1021
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "8841175cdbf219d52d90c28c4fd058176ee3e739",
+  "prompts": {},
+  "humans": {
+    "h_aa1f579535d063": {
+      "author": "Celtian <dominik.hladik@seznam.cz>"
+    }
+  },
+  "sessions": {
+    "s_b802732e87b771": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0fee1-3cfc-7ec3-b468-b1e45055c201",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Celtian <dominik.hladik@seznam.cz>"
+    }
+  }
+}
