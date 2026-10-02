@@ -57,3 +57,13 @@ You are an expert in TypeScript, Angular, and scalable web application developme
 - Use the `providedIn: 'root'` option for singleton services
 - Prefer the `@Service` decorator over `@Injectable({providedIn: 'root'})` for new singleton services (Angular v22+)
 - Use the `inject()` function instead of constructor injection
+
+## Verification and Handoff
+
+- Never add inline ESLint configuration comments, including `eslint-disable`, `eslint-enable`, or inline rule configuration. Fix the violation instead.
+- Do not weaken ESLint rules, add ignores, or alter lint enforcement to make generated code pass unless the user explicitly requests a lint-policy change.
+- Inspect the repository CI workflow for every changed subsystem and run its equivalent checks before reporting completion.
+- State the exact scope of checks that ran. A skipped check or a command that selected zero files or tests must never be reported as passing.
+- When running under WSL, do not conclude that browser verification is unavailable only because a Linux or MCP-managed Chrome binary is missing. Check for and prefer the host Windows browsers before downloading another browser, especially `/mnt/c/Program Files/Google/Chrome/Application/chrome.exe` and `/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe`.
+- When invoking a Windows browser from WSL, quote executable paths containing spaces and convert Linux output paths with `wslpath -w` when the browser must write screenshots or other artifacts. If an MCP browser cannot be configured with the Windows executable, use the Windows browser directly in headless mode for the required verification.
+- Follow every applicable repository instruction and skill; if one cannot be used, report why and use the safest available fallback.

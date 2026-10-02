@@ -6,6 +6,9 @@ import { RouterOutlet } from '@angular/router';
   imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css',
+  host: {
+    class: 'flex flex-col min-h-screen',
+  },
 })
 export class App {
   protected readonly title = signal('portal');

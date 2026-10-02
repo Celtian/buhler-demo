@@ -1,6 +1,12 @@
 {
   "name": "buhler-demo",
   "version": "0.0.0",
+  "description": "Buhler demo project",
+  "author": {
+    "name": "Dominik Hladík",
+    "email": "dominik.hladik@seznam.cz",
+    "url": "https://github.com/Celtian"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +14,10 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "prepare": "husky"
+    "prepare": "husky",
+    "postinstall": "bun run create-version",
+    "check-circular-dependencies": "madge --circular --ts-config tsconfig.json ./libs/*/src/public-api.ts",
+    "create-version": "package-version-info -o generated/version-info.ts -g .git"
   },
   "private": true,
   "packageManager": "bun@1.4.2",
@@ -35,6 +44,8 @@
     "husky": "^9.1.7",
     "jsdom": "^30.1.1",
     "lint-staged": "^17.6.0",
+    "madge": "^8.0.0",
+    "package-version-info": "^0.3.0",
     "postcss": "^8.5.28",
     "prettier": "^3.9.9",
     "prettier-plugin-tailwindcss": "^0.8.1",
