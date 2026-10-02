@@ -15,7 +15,8 @@
     "target": "ES2022",
     "module": "preserve",
     "paths": {
-      "@/generated/*": ["./generated/*"]
+      "@/generated/*": ["./generated/*"],
+      "@/ui": ["./projects/ui/src/public-api.ts"]
     }
   },
   "angularCompilerOptions": {
@@ -30,6 +31,12 @@
     },
     {
       "path": "./projects/portal/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui/tsconfig.spec.json"
     }
   ]
 }

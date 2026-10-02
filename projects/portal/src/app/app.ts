@@ -1,12 +1,14 @@
-import { DatePipe, NgOptimizedImage } from '@angular/common';
+import { DatePipe } from '@angular/common';
 import { Component, DestroyRef, computed, inject, signal } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
+
+import { Logo } from '@/ui';
 
 import { MaterialIcon } from './shared/material-icon/material-icon';
 
 @Component({
   selector: 'app-root',
-  imports: [DatePipe, MaterialIcon, NgOptimizedImage, RouterLink, RouterOutlet],
+  imports: [DatePipe, Logo, MaterialIcon, RouterLink, RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css',
   host: { class: 'flex flex-col min-h-screen' },

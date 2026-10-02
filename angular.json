@@ -6,6 +6,21 @@
     "analytics": false,
     "schematicCollections": ["angular-eslint"]
   },
+  "schematics": {
+    "@schematics/angular:component": {
+      "skipTests": true,
+      "style": "none"
+    },
+    "@schematics/angular:directive": {
+      "skipTests": true
+    },
+    "@schematics/angular:service": {
+      "skipTests": true
+    },
+    "@schematics/angular:pipe": {
+      "skipTests": true
+    }
+  },
   "newProjectRoot": "projects",
   "projects": {
     "portal": {
@@ -72,6 +87,39 @@
           "options": {
             "lintFilePatterns": ["projects/portal/**/*.ts", "projects/portal/**/*.html"],
             "eslintConfig": "projects/portal/eslint.config.js"
+          }
+        }
+      }
+    },
+    "ui": {
+      "projectType": "library",
+      "root": "projects/ui",
+      "sourceRoot": "projects/ui/src",
+      "prefix": "ui",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ui/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test",
+          "options": {
+            "tsConfig": "projects/ui/tsconfig.spec.json"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": ["projects/ui/**/*.ts", "projects/ui/**/*.html"],
+            "eslintConfig": "projects/ui/eslint.config.js"
           }
         }
       }

@@ -12,6 +12,9 @@
   display: inline-flex;
   flex-shrink: 0;
 }
+.brand ui-logo {
+  width: 196px;
+}
 .header-details {
   display: flex;
   align-items: center;
@@ -49,9 +52,8 @@ main {
     gap: 16px;
     padding: 20px 16px;
   }
-  .brand img {
+  .brand ui-logo {
     width: 156px;
-    height: auto;
   }
   .header-details {
     flex-wrap: wrap;
