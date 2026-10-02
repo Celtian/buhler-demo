@@ -1,0 +1,35 @@
+projects/portal/src/index.html
+  s_69cda65d9a5a8c::t_c420a72f003e09 9,13
+projects/portal/public/manifest.webmanifest
+  s_69cda65d9a5a8c::t_28bb4f1910af17 2-3
+  s_69cda65d9a5a8c::t_c420a72f003e09 1,4-57
+projects/portal/src/app/app.config.ts
+  s_69cda65d9a5a8c::t_c420a72f003e09 2,10,34-37
+angular.json
+  s_69cda65d9a5a8c::t_c420a72f003e09 60-61
+package.json
+  s_69cda65d9a5a8c::t_c420a72f003e09 32
+projects/portal/ngsw-config.json
+  s_69cda65d9a5a8c::t_c420a72f003e09 1-13,15-29
+  s_69cda65d9a5a8c::t_28bb4f1910af17 14
+README.md
+  s_69cda65d9a5a8c::t_28bb4f1910af17 49-59
+bun.lock
+  s_69cda65d9a5a8c::t_62e56909feb4da 15,97-98
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "644e438fc03a0bccae16d9ea10ee025f3b5f071e",
+  "prompts": {},
+  "sessions": {
+    "s_69cda65d9a5a8c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0fedf-68f8-7933-b64f-8477ad0e2b59",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Celtian <dominik.hladik@seznam.cz>"
+    }
+  }
+}
