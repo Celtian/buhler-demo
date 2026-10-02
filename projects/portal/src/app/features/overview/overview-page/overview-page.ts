@@ -7,7 +7,7 @@ import { MachineButton } from '../machine-button/machine-button';
   selector: 'app-overview-page',
   imports: [MachineButton],
   templateUrl: './overview-page.html',
-  styleUrl: './overview-page.css',
+  host: { class: 'flex flex-1 flex-col' },
 })
 export class OverviewPage {
   protected readonly line = inject(ProductionLine);

@@ -1,0 +1,16 @@
+@layer base {
+  :where(button, a, [role='button']) {
+    @apply transition duration-300;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    :where(button, a, [role='button']) {
+      transition: none;
+    }
+  }
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+}

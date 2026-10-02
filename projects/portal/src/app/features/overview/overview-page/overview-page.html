@@ -1,13 +1,29 @@
 <h1 class="sr-only">Production line overview</h1>
 @if (line.loading()) {
-  <div class="feedback" role="status">Loading production line…</div>
+  <div
+    class="grid min-h-110 flex-1 content-center justify-items-center gap-5 p-8 text-center"
+    role="status"
+  >
+    Loading production line…
+  </div>
 } @else if (line.error()) {
-  <div class="feedback">
+  <div class="grid min-h-110 flex-1 content-center justify-items-center gap-5 p-8 text-center">
     <p role="alert">{{ line.error() }}</p>
-    <button #retryButton class="retry" type="button" (click)="retry()">Retry</button>
+    <button
+      #retryButton
+      class="min-h-11 cursor-pointer bg-focus px-6 py-2 text-canvas"
+      type="button"
+      (click)="retry()"
+    >
+      Retry
+    </button>
   </div>
 } @else {
-  <nav #machineNavigation class="machine-navigation" aria-label="Production line machines">
+  <nav
+    #machineNavigation
+    class="flex bg-surface [@media(max-width:600px)]:grid [@media(max-width:600px)]:grid-cols-2"
+    aria-label="Production line machines"
+  >
     @for (machine of line.machines(); track machine.id) {
       <app-machine-button
         view="navigation"
@@ -17,10 +33,17 @@
       />
     }
   </nav>
-  <section class="overview" aria-label="Connected production line">
-    <ol class="production-line">
+  <section
+    class="flex min-h-110 flex-1 items-center px-11 py-16 [@media(max-width:600px)]:px-6 [@media(max-width:600px)]:py-10"
+    aria-label="Connected production line"
+  >
+    <ol
+      class="mx-auto flex w-full max-w-275 list-none items-center p-0 [@media(max-width:600px)]:flex-col"
+    >
       @for (machine of line.machines(); track machine.id) {
-        <li>
+        <li
+          class="flex flex-1 items-center after:h-0.75 after:flex-1 after:bg-machine-connector after:content-[''] last:flex-none last:after:hidden [@media(max-width:600px)]:flex-none [@media(max-width:600px)]:flex-col [@media(max-width:600px)]:after:h-8 [@media(max-width:600px)]:after:w-0.75 [@media(max-width:600px)]:after:flex-none"
+        >
           <app-machine-button
             [machine]="machine"
             [selected]="line.selectedMachineId() === machine.id"

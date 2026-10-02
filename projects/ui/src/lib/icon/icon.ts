@@ -43,13 +43,15 @@ const icons = {
   imports: [NgIcon],
   template: `<ng-icon aria-hidden="true" size="100%" [svg]="svg()" />`,
   styles: `
-    :host {
-      display: inline-flex;
-      width: 1.5rem;
-      height: 1.5rem;
-      flex-shrink: 0;
+    @reference 'tailwindcss';
+
+    @layer components {
+      :host {
+        @apply size-6;
+      }
     }
   `,
+  host: { class: 'inline-flex shrink-0' },
 })
 export class Icon {
   readonly name = input.required<IconName>();
