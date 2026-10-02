@@ -1,11 +1,12 @@
 import { Component, computed, input, output } from '@angular/core';
 
+import { Icon } from '@/ui';
+
 import { MachineView } from '../../../services/production-line.models';
-import { MaterialIcon } from '../../../shared/material-icon/material-icon';
 
 @Component({
   selector: 'app-machine-button',
-  imports: [MaterialIcon],
+  imports: [Icon],
   template: `
     <button
       type="button"
@@ -15,13 +16,9 @@ import { MaterialIcon } from '../../../shared/material-icon/material-icon';
       [attr.aria-pressed]="selected()"
       (click)="choose.emit(machine().id)"
     >
-      <app-material-icon
-        class="state-icon"
-        [style.color]="statusColor()"
-        [name]="machine().state.icon"
-      />
+      <ui-icon class="state-icon" [style.color]="statusColor()" [name]="machine().state.icon" />
       @if (view() === 'tile') {
-        <app-material-icon class="machine-icon" [name]="machine().icon" />
+        <ui-icon class="machine-icon" [name]="machine().icon" />
       }
       <span>{{ machine().name }}</span>
     </button>

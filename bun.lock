@@ -11,6 +11,8 @@
         "@angular/forms": "^22.2.1",
         "@angular/platform-browser": "^22.2.1",
         "@angular/router": "^22.2.1",
+        "@ng-icons/core": "^36.1.0",
+        "@ng-icons/material-icons": "^36.1.0",
         "rxjs": "^7.8.2",
         "tslib": "^2.8.1",
       },
@@ -335,6 +337,10 @@
     "@napi-rs/nice-win32-ia32-msvc": ["@napi-rs/nice-win32-ia32-msvc@1.1.1", "", { "os": "win32", "cpu": "ia32" }, "sha512-CNQqlQT9MwuCsg1Vd/oKXiuH+TcsSPJmlAFc5frFyX/KkOh0UpBLEj7aoY656d5UKZQMQFP7vJNa1DNUNORvug=="],
 
     "@napi-rs/nice-win32-x64-msvc": ["@napi-rs/nice-win32-x64-msvc@1.1.1", "", { "os": "win32", "cpu": "x64" }, "sha512-vB+4G/jBQCAh0jelMTY3+kgFy00Hlx2f2/1zjMoH821IbplbWZOkLiTYXQkygNTzQJTq5cvwBDgn2ppHD+bglQ=="],
+
+    "@ng-icons/core": ["@ng-icons/core@36.1.0", "", { "dependencies": { "tslib": "^2.3.0" }, "peerDependencies": { "@angular-devkit/schematics": ">=22.0.0", "@angular/common": ">=22.0.0", "@angular/core": ">=22.0.0", "@schematics/angular": ">=22.0.0", "rxjs": "^6.5.3 || ^7.4.0" } }, "sha512-2o6M/K29lPN3wGq/nOxqVjzDV25HHIh6PXm2/ISwKa0eFbbDYwYkg7g9msjPS40OmQpqBgSVLIwinEifEOQNjg=="],
+
+    "@ng-icons/material-icons": ["@ng-icons/material-icons@36.1.0", "", { "dependencies": { "tslib": "^2.3.0" }, "peerDependencies": { "@ng-icons/core": "^36.1.0" } }, "sha512-j2z8V3M0s5z3cdk7L3baBbWGrRVfTnHOJE0ytmQdWTIWDAD6fYYbQoml42jsjHeK972W57ylX461ZABTUfeoTA=="],
 
     "@oxc-parser/binding-android-arm-eabi": ["@oxc-parser/binding-android-arm-eabi@0.150.0", "", { "os": "android", "cpu": "arm" }, "sha512-oQef2Zu4Prz1KLKznz3HqZzU9uVoA5PMoDZuuLmqms7hKmKSAPzlaMnLllJq3t+rgKmfJJ2siPrpZfFrW06btw=="],
 
