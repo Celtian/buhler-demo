@@ -14,3 +14,7 @@
   margin-inline: auto;
   padding-inline: 1rem;
 }
+
+@utility ui-scrollbar {
+  @apply scrollbar-thin scrollbar-thumb-primary-400 scrollbar-track-primary-200 scrollbar-corner-primary-200;
+}
