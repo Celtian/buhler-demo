@@ -1,0 +1,41 @@
+projects/ui/src/lib/spinner/spinner.html
+  s_5f84009604c2f1::t_0b94408ca7f4fb 1-19
+projects/ui/src/lib/spinner/spinner.ts
+  s_5f84009604c2f1::t_394e4dcd0b1d11 2,26-27,29
+  s_5f84009604c2f1::t_0b94408ca7f4fb 1,3-25,28,30-35
+projects/ui/README.md
+  s_5f84009604c2f1::t_0b94408ca7f4fb 123-143
+projects/ui/src/public-api.ts
+  s_5f84009604c2f1::t_0b94408ca7f4fb 9
+projects/ui/src/lib/spinner/spinner.spec.ts
+  s_5f84009604c2f1::t_119773c2e6c121 1-56
+projects/portal/src/app/features/overview/overview-page/overview-page.ts
+  s_d1b0ad769d4094::t_c2dc7cde52d7af 3-4,10
+projects/portal/src/app/features/overview/overview-page/overview-page.html
+  s_d1b0ad769d4094::t_f9924c9062ac81 3
+  s_d1b0ad769d4094::t_c2dc7cde52d7af 4-5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "6babee54552bcea0859cd58e41261001197a2107",
+  "prompts": {},
+  "sessions": {
+    "s_5f84009604c2f1": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0fed5-ce7b-7453-ad39-21aa77cb5dc6",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Celtian <dominik.hladik@seznam.cz>"
+    },
+    "s_d1b0ad769d4094": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0fed9-1c8a-7030-9b1a-a1b4a37962da",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Celtian <dominik.hladik@seznam.cz>"
+    }
+  }
+}
