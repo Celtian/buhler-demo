@@ -1,0 +1,74 @@
+projects/ui/src/public-api.ts
+  h_aa1f579535d063 1-2,4
+projects/portal/src/app/features/overview/overview-page/overview-page.css
+  s_347d7cd5ad1e8f::t_475f5069770e9f 34
+  s_a444c480ba4be4::t_630b55c64b3f63 8,56-57
+projects/portal/src/app/app.css
+  s_a444c480ba4be4::t_630b55c64b3f63 8-9,42-43
+projects/ui/src/lib/logo/logo.ts
+  s_a444c480ba4be4::t_630b55c64b3f63 20
+projects/portal/src/app/features/overview/machine-button/machine-button.html
+  s_347d7cd5ad1e8f::t_75cddee7cf03dc 1-14,16-22
+  s_347d7cd5ad1e8f::t_475f5069770e9f 15
+projects/ui/src/lib/button/button.ts
+  s_a444c480ba4be4::t_8bf91ea5250c12 1,3-7,9-18,25-30,32-33,40,42-50,68-74,76-82,84,89-92,94-100,102-110,112-115
+  s_347d7cd5ad1e8f::t_475f5069770e9f 53-62
+  h_aa1f579535d063 2,85-88,93
+  s_347d7cd5ad1e8f::t_e4ac7e36cda700 51-52,63-67
+  s_347d7cd5ad1e8f::t_c810c5dfc1e22c 8,31,34-37,39,75,83,101,111
+  s_a444c480ba4be4::t_630b55c64b3f63 19-22,24,41
+  s_a444c480ba4be4::t_473114f2ae2230 23
+  s_347d7cd5ad1e8f::t_c956cd7b9f9c55 38
+projects/ui/src/lib/button/button.html
+  h_aa1f579535d063 1
+projects/portal/src/app/features/overview/machine-button/machine-button.ts
+  s_347d7cd5ad1e8f::t_c810c5dfc1e22c 3,18-27
+  s_347d7cd5ad1e8f::t_75cddee7cf03dc 10
+  s_347d7cd5ad1e8f::t_d23f6ddbd9a871 11
+  s_347d7cd5ad1e8f::t_e8f794c30f1fd6 9
+projects/portal/src/styles.css
+  s_a444c480ba4be4::t_630b55c64b3f63 1,5-6,14
+projects/ui/src/css/styles/colors.css
+  s_347d7cd5ad1e8f::t_475f5069770e9f 78-84
+  h_aa1f579535d063 85
+  s_a444c480ba4be4::t_630b55c64b3f63 1-77
+projects/ui/eslint.config.js
+  h_aa1f579535d063 21
+projects/ui/src/css/styles.css
+  h_aa1f579535d063 1-2
+bun.lock
+  h_aa1f579535d063 16,18,653-654,667-668,1227-1228
+package.json
+  h_aa1f579535d063 33,35
+projects/ui/src/lib/helpers/tailwind.ts
+  h_aa1f579535d063 1-6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "f54566ed1d0e200ba5e9ea96c411c9a31dd05ecd",
+  "prompts": {},
+  "humans": {
+    "h_aa1f579535d063": {
+      "author": "Celtian <dominik.hladik@seznam.cz>"
+    }
+  },
+  "sessions": {
+    "s_347d7cd5ad1e8f": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0fe83-e8f7-7e10-a407-b9dd41b4d3b7",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Celtian <dominik.hladik@seznam.cz>"
+    },
+    "s_a444c480ba4be4": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0fe70-011a-7b90-b97d-3bcde5bd8099",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Celtian <dominik.hladik@seznam.cz>"
+    }
+  }
+}
