@@ -1,0 +1,53 @@
+projects/portal/public/data/machines.json
+  s_771d56522951bd::t_e9f35e0eb14a9b 1-30
+projects/portal/src/app/app.routes.ts
+  h_aa1f579535d063 7,13
+  s_771d56522951bd::t_81e507165790b3 3-6,8-12,14-17
+projects/portal/src/app/providers/title.ts
+  h_aa1f579535d063 1-13
+tsconfig.json
+  s_771d56522951bd::t_1faee6e4f3e424 15-18
+projects/portal/src/app/app.html
+  s_771d56522951bd::t_81e507165790b3 1-4
+  s_771d56522951bd::t_2c7d91bc8b31d5 5-7
+  h_aa1f579535d063 8
+projects/portal/public/data/machine-states.json
+  s_771d56522951bd::t_e9f35e0eb14a9b 1-20
+projects/portal/src/app/features/not-found/not-found-page/not-found-page.ts
+  s_771d56522951bd::t_60fbc45a8d9ae8 1,3-5,8-9
+  h_aa1f579535d063 2,6-7
+projects/portal/src/app/features/overview/overview-page/overview-page.html
+  h_aa1f579535d063 1-6
+projects/portal/src/app/app.ts
+  s_771d56522951bd::t_81e507165790b3 1-2,6,13
+projects/portal/src/app/features/overview/overview-page/overview-page.ts
+  h_aa1f579535d063 5
+  s_771d56522951bd::t_60fbc45a8d9ae8 1-4,6-7
+projects/portal/src/app/features/not-found/not-found-page/not-found-page.html
+  h_aa1f579535d063 1-10
+projects/portal/src/app/services/custom-title-strategy.ts
+  h_aa1f579535d063 1-20
+projects/portal/src/app/app.config.ts
+  h_aa1f579535d063 11,25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "a0e566d6f907db7e6280dae8f8527ef1e836a34d",
+  "prompts": {},
+  "humans": {
+    "h_aa1f579535d063": {
+      "author": "Celtian <dominik.hladik@seznam.cz>"
+    }
+  },
+  "sessions": {
+    "s_771d56522951bd": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0fcc6-1e80-77d1-abb6-a87bbe4479e7",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Celtian <dominik.hladik@seznam.cz>"
+    }
+  }
+}
