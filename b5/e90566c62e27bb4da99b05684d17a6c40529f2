@@ -1,0 +1,18 @@
+package.json
+  h_aa1f579535d063 9-10,29
+.husky/commit-msg
+  h_aa1f579535d063 1
+bun.lock
+  h_aa1f579535d063 22,552-553
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "b5e90566c62e27bb4da99b05684d17a6c40529f2",
+  "prompts": {},
+  "humans": {
+    "h_aa1f579535d063": {
+      "author": "Celtian <dominik.hladik@seznam.cz>"
+    }
+  }
+}
