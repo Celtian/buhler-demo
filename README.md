@@ -1,5 +1,15 @@
 # BuhlerDemo
 
+The `/overview` page displays the Bühler bagging line in a machine navigation strip and a
+connected overview. Select a machine in either view to highlight it in both; selection does
+not change its running, alarm, or warning state. On small screens the line stacks vertically.
+
+Machine configuration and initial states are loaded from
+`projects/portal/public/data/machines.json` and `machine-states.json`. Machines are sorted by
+`order` and joined to states by `stateId`. These are static fixtures, not live telemetry.
+The header clock uses the browser's local time. Google Material icons are bundled locally,
+with their Apache license in `projects/portal/public/icons/`.
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.2.1.
 
 ## Development server

@@ -3,21 +3,21 @@
     "id": "scale",
     "name": "Scale",
     "order": 1,
-    "icon": "scale",
+    "icon": "system_update_alt",
     "stateId": "running"
   },
   {
     "id": "bag-attach",
     "name": "Attacher",
     "order": 2,
-    "icon": "view_sidebar",
+    "icon": "chrome_reader_mode",
     "stateId": "alarm"
   },
   {
     "id": "packer",
     "name": "Packer",
     "order": 3,
-    "icon": "inventory_2",
+    "icon": "call_to_action",
     "stateId": "running"
   },
   {

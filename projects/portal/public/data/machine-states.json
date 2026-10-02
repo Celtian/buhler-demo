@@ -2,7 +2,7 @@
   {
     "id": "running",
     "label": "Running",
-    "icon": "autorenew",
+    "icon": "settings_backup_restore",
     "color": "#398000"
   },
   {

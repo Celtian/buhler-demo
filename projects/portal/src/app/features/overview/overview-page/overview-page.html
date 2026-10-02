@@ -1,6 +1,33 @@
-<h1 class="text-3xl font-bold focus:outline-2 focus:outline-offset-4 focus:outline-teal-800">
-  Production line overview
-</h1>
-<p class="mt-4 max-w-prose text-slate-700">
-  An overview of the Bühler production line for bagging rice, sugar and wheat.
-</p>
+<h1 class="sr-only">Production line overview</h1>
+@if (line.loading()) {
+  <div class="feedback" role="status">Loading production line…</div>
+} @else if (line.error()) {
+  <div class="feedback">
+    <p role="alert">{{ line.error() }}</p>
+    <button #retryButton class="retry" type="button" (click)="retry()">Retry</button>
+  </div>
+} @else {
+  <nav #machineNavigation class="machine-navigation" aria-label="Production line machines">
+    @for (machine of line.machines(); track machine.id) {
+      <app-machine-button
+        view="navigation"
+        [machine]="machine"
+        [selected]="line.selectedMachineId() === machine.id"
+        (choose)="line.select($event)"
+      />
+    }
+  </nav>
+  <section class="overview" aria-label="Connected production line">
+    <ol class="production-line">
+      @for (machine of line.machines(); track machine.id) {
+        <li>
+          <app-machine-button
+            [machine]="machine"
+            [selected]="line.selectedMachineId() === machine.id"
+            (choose)="line.select($event)"
+          />
+        </li>
+      }
+    </ol>
+  </section>
+}
