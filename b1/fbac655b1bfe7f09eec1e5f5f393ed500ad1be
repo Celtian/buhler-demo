@@ -1,0 +1,32 @@
+projects/ui/src/css/styles.css
+  s_e0de2fce759926::t_11848710b8cdd8 4-5
+package.json
+  s_e0de2fce759926::t_11848710b8cdd8 58
+projects/ui/src/css/styles/common.css
+  s_e0de2fce759926::t_11848710b8cdd8 17-20
+projects/portal/src/index.html
+  s_e0de2fce759926::t_6f673c66628db4 2
+bun.lock
+  s_e0de2fce759926::t_3f14e5f24210ff 41,504-505,1088-1089,1108-1109,1236-1237
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "b1fbac655b1bfe7f09eec1e5f5f393ed500ad1be",
+  "prompts": {},
+  "humans": {
+    "h_aa1f579535d063": {
+      "author": "Celtian <dominik.hladik@seznam.cz>"
+    }
+  },
+  "sessions": {
+    "s_e0de2fce759926": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0feaa-d8f1-7023-9d07-12448fb59f5e",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Celtian <dominik.hladik@seznam.cz>"
+    }
+  }
+}
