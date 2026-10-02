@@ -1,0 +1,86 @@
+projects/portal/src/styles.css
+  s_b67b6a990aaff5::t_b9c92f0a46336c 2
+  s_b67b6a990aaff5::t_0cc4c0ceaa0d62 3-16
+projects/portal/src/app/features/overview/overview-page/overview-page.spec.ts
+  s_b67b6a990aaff5::t_0cc4c0ceaa0d62 1-74,76-77
+  s_b67b6a990aaff5::t_05b38dc82fed86 75
+projects/portal/public/images/buhler.svg
+  s_b67b6a990aaff5::t_2e4214797fd746 1-114
+projects/portal/src/app/app.css
+  s_b67b6a990aaff5::t_b9c92f0a46336c 46,61
+  s_b67b6a990aaff5::t_0cc4c0ceaa0d62 1-45,47-60
+projects/portal/public/icons/README.txt
+  s_b67b6a990aaff5::t_abeed8227ea41a 1,3-7
+  s_b67b6a990aaff5::t_d62fe96715e279 2
+projects/portal/src/app/shared/material-icon/material-icon.ts
+  s_b67b6a990aaff5::t_b9c92f0a46336c 1,3-4,7-10,24-27
+  s_b67b6a990aaff5::t_31335465105b23 2,5-6,23
+  s_b67b6a990aaff5::t_0cc4c0ceaa0d62 11-22
+projects/portal/src/app/services/production-line.testing.ts
+  s_b67b6a990aaff5::t_0cc4c0ceaa0d62 1-4,8-10,12-14
+  s_b67b6a990aaff5::t_abeed8227ea41a 5-7,11
+projects/portal/src/app/features/overview/machine-button/machine-button.css
+  s_b67b6a990aaff5::t_0cc4c0ceaa0d62 1-65,67-76
+  s_b67b6a990aaff5::t_b9c92f0a46336c 66,77
+projects/portal/src/app/services/production-line.models.ts
+  s_b67b6a990aaff5::t_0cc4c0ceaa0d62 2,6,8-11
+  s_b67b6a990aaff5::t_abeed8227ea41a 3-5,7
+  s_b67b6a990aaff5::t_b9c92f0a46336c 1,12-30
+projects/portal/public/data/machine-states.json
+  s_b67b6a990aaff5::t_abeed8227ea41a 5
+projects/portal/public/data/machines.json
+  s_b67b6a990aaff5::t_abeed8227ea41a 6,13,20
+README.md
+  s_b67b6a990aaff5::t_05b38dc82fed86 3-12
+projects/portal/src/app/services/production-line.ts
+  s_b67b6a990aaff5::t_b9c92f0a46336c 1-3,5-8,10-86
+  s_b67b6a990aaff5::t_31335465105b23 4,9
+projects/portal/public/icons/LICENSE.txt
+  s_b67b6a990aaff5::t_d62fe96715e279 1-202
+projects/portal/src/app/features/overview/overview-page/overview-page.html
+  s_b67b6a990aaff5::t_05b38dc82fed86 7,10
+  s_b67b6a990aaff5::t_b9c92f0a46336c 1-6,8-9,11-33
+projects/portal/public/icons/material.svg
+  s_b67b6a990aaff5::t_abeed8227ea41a 1
+projects/portal/src/app/features/overview/overview-page/overview-page.ts
+  s_b67b6a990aaff5::t_05b38dc82fed86 1,14-35
+  s_b67b6a990aaff5::t_0cc4c0ceaa0d62 10
+  s_b67b6a990aaff5::t_b9c92f0a46336c 3-4,12-13,36
+  s_b67b6a990aaff5::t_0c201bcb267bdf 2,8
+tsconfig.json
+  s_b67b6a990aaff5::t_0cc4c0ceaa0d62 6,24
+projects/portal/src/app/features/overview/overview-page/overview-page.css
+  s_b67b6a990aaff5::t_0cc4c0ceaa0d62 1-59,61-79
+  s_b67b6a990aaff5::t_b9c92f0a46336c 60,80
+projects/portal/src/app/app.config.ts
+  s_b67b6a990aaff5::t_b9c92f0a46336c 1,16
+projects/portal/src/app/services/production-line.spec.ts
+  s_b67b6a990aaff5::t_0cc4c0ceaa0d62 1-102
+projects/portal/src/app/features/overview/machine-button/machine-button.ts
+  s_b67b6a990aaff5::t_0cc4c0ceaa0d62 29,36-44
+  s_b67b6a990aaff5::t_b9c92f0a46336c 1,3-5,9-10,12-28,31-35,45
+  s_b67b6a990aaff5::t_31335465105b23 2,6-7,30
+  s_b67b6a990aaff5::t_08a7c8e47d3ae1 8,11
+projects/portal/src/app/app.ts
+  s_b67b6a990aaff5::t_b9c92f0a46336c 1-2,5-6,14-22
+  s_b67b6a990aaff5::t_0cc4c0ceaa0d62 12
+  s_b67b6a990aaff5::t_aa0a11e7cee1d0 9
+projects/portal/src/app/app.html
+  s_b67b6a990aaff5::t_b9c92f0a46336c 1-15,17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "e3de78593e10050efa8693cf4ab6db1897010282",
+  "prompts": {},
+  "sessions": {
+    "s_b67b6a990aaff5": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0fe38-73c7-7b12-a3d4-d711c845b4c9",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Celtian <dominik.hladik@seznam.cz>"
+    }
+  }
+}
