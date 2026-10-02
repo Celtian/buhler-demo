@@ -1,0 +1,66 @@
+projects/ui/src/css/styles.css
+  h_aa1f579535d063 2
+projects/portal/src/app/services/production-line.ts
+  s_f1ddef07046e0e::t_0c507f45a7c715 14,16-20,22,24-25,27
+  s_f1ddef07046e0e::t_d91c7a9e93cff6 15,21
+  s_f1ddef07046e0e::t_f7a40e584a401b 1-2,8-13,23,26,28-43,47,53,55-56
+projects/portal/src/app/features/overview/overview-page/overview-page.html
+  s_ac6fb8d2f640a2::t_30b36d3de0231a 3,5-8,12-19,22-26,36,38-40,42,44,46
+  s_ac6fb8d2f640a2::t_12dffd07932fa4 4,10,37,41,45
+projects/portal/src/app/features/not-found/not-found-page/not-found-page.ts
+  s_9ab7ef6cd6b7b7::t_ce459991e04042 4-5,8,10
+projects/ui/src/css/styles/common.css
+  h_aa1f579535d063 1-16
+projects/ui/src/lib/icon/icon.ts
+  s_132c5d4f10828f::t_2e283d84bd7040 46-47,54
+  s_132c5d4f10828f::t_787044fc6653cd 48-51
+projects/portal/src/app/features/not-found/not-found-page/not-found-page.html
+  s_9ab7ef6cd6b7b7::t_ce459991e04042 1-12
+projects/portal/src/app/features/overview/overview-page/overview-page.ts
+  s_ac6fb8d2f640a2::t_30b36d3de0231a 10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "aaf04113499e012a15079d37a639167b162bd080",
+  "prompts": {},
+  "humans": {
+    "h_aa1f579535d063": {
+      "author": "Celtian <dominik.hladik@seznam.cz>"
+    }
+  },
+  "sessions": {
+    "s_132c5d4f10828f": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0fe9a-d883-7530-8511-04a9c33ff4b2",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Celtian <dominik.hladik@seznam.cz>"
+    },
+    "s_9ab7ef6cd6b7b7": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0fe97-8a72-7e81-8f8a-517b1f0af115",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Celtian <dominik.hladik@seznam.cz>"
+    },
+    "s_ac6fb8d2f640a2": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0fe94-028a-7a61-bff1-cd5d6705800a",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Celtian <dominik.hladik@seznam.cz>"
+    },
+    "s_f1ddef07046e0e": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0fe9f-017d-7442-9b10-76dea26b08da",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Celtian <dominik.hladik@seznam.cz>"
+    }
+  }
+}
