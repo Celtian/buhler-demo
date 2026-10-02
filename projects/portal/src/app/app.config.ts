@@ -8,6 +8,7 @@ import {
 } from '@angular/router';
 
 import { routes } from './app.routes';
+import { provideTitle } from './providers/title';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -21,5 +22,6 @@ export const appConfig: ApplicationConfig = {
         scrollPositionRestoration: 'enabled',
       }),
     ),
+    provideTitle(),
   ],
 };

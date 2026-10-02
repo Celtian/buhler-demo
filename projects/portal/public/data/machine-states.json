@@ -1,0 +1,20 @@
+[
+  {
+    "id": "running",
+    "label": "Running",
+    "icon": "autorenew",
+    "color": "#398000"
+  },
+  {
+    "id": "alarm",
+    "label": "Alarm",
+    "icon": "error_outline",
+    "color": "#D32F2F"
+  },
+  {
+    "id": "warning",
+    "label": "Warning",
+    "icon": "warning",
+    "color": "#F59E0B"
+  }
+]

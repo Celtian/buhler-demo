@@ -1,0 +1,30 @@
+[
+  {
+    "id": "scale",
+    "name": "Scale",
+    "order": 1,
+    "icon": "scale",
+    "stateId": "running"
+  },
+  {
+    "id": "bag-attach",
+    "name": "Attacher",
+    "order": 2,
+    "icon": "view_sidebar",
+    "stateId": "alarm"
+  },
+  {
+    "id": "packer",
+    "name": "Packer",
+    "order": 3,
+    "icon": "inventory_2",
+    "stateId": "running"
+  },
+  {
+    "id": "bag-closer",
+    "name": "Closer",
+    "order": 4,
+    "icon": "grid_on",
+    "stateId": "warning"
+  }
+]
