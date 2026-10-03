@@ -3,7 +3,7 @@ import { Component, computed, linkedSignal } from '@angular/core';
 
 import { Spinner } from '@/ui';
 
-import { Machine, MachineState, MachineView } from '../../../services/production-line.models';
+import { Machine, MachineState, MachineView } from '../../../models/production-line.models';
 import { MachineButton } from '../machine-button/machine-button';
 
 @Component({

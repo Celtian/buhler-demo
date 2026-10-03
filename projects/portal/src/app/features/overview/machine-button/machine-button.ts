@@ -2,7 +2,7 @@ import { Component, computed, input, output } from '@angular/core';
 
 import { Button, type ButtonColor, Icon } from '@/ui';
 
-import { MachineView } from '../../../services/production-line.models';
+import { MachineView } from '../../../models/production-line.models';
 
 @Component({
   selector: 'app-machine-button',
