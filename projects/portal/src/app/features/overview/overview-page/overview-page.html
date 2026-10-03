@@ -1,14 +1,13 @@
 <h1 class="sr-only">Production line overview</h1>
-@if (line.loading()) {
+@if (loading()) {
   <div class="grid min-h-110 flex-1 content-center justify-items-center gap-5 p-8 text-center">
     <ui-spinner size="lg" loadingText="Loading production line…" />
     <p aria-hidden="true">Loading production line…</p>
   </div>
-} @else if (line.error()) {
+} @else if (error()) {
   <div class="grid min-h-110 flex-1 content-center justify-items-center gap-5 p-8 text-center">
-    <p role="alert">{{ line.error() }}</p>
+    <p role="alert">{{ error() }}</p>
     <button
-      #retryButton
       class="min-h-11 cursor-pointer bg-focus px-6 py-2 text-canvas"
       type="button"
       (click)="retry()"
@@ -17,17 +16,13 @@
     </button>
   </div>
 } @else {
-  <nav
-    #machineNavigation
-    class="flex bg-surface max-sm:grid max-sm:grid-cols-2"
-    aria-label="Production line machines"
-  >
-    @for (machine of line.machines(); track machine.id) {
+  <nav class="flex bg-surface max-sm:grid max-sm:grid-cols-2" aria-label="Production line machines">
+    @for (machine of machines(); track machine.id) {
       <app-machine-button
         view="navigation"
         [machine]="machine"
-        [selected]="line.selectedMachineId() === machine.id"
-        (choose)="line.select($event)"
+        [selected]="selectedMachineId() === machine.id"
+        (choose)="select($event)"
       />
     }
   </nav>
@@ -36,14 +31,14 @@
     aria-label="Connected production line"
   >
     <ol class="mx-auto flex w-full max-w-275 list-none items-center p-0 max-sm:flex-col">
-      @for (machine of line.machines(); track machine.id) {
+      @for (machine of machines(); track machine.id) {
         <li
           class="flex flex-1 items-center after:h-0.75 after:flex-1 after:bg-machine-connector after:content-[''] last:flex-none last:after:hidden max-sm:flex-none max-sm:flex-col max-sm:after:h-8 max-sm:after:w-0.75 max-sm:after:flex-none"
         >
           <app-machine-button
             [machine]="machine"
-            [selected]="line.selectedMachineId() === machine.id"
-            (choose)="line.select($event)"
+            [selected]="selectedMachineId() === machine.id"
+            (choose)="select($event)"
           />
         </li>
       }
