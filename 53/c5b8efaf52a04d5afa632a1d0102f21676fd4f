@@ -1,0 +1,31 @@
+eslint.config.js
+  s_8175b701a15d89::t_f4dc782df75775 22
+  s_8175b701a15d89::t_87d6f7392f89f3 31
+  s_8175b701a15d89::t_6498a3856c081b 6-8,20-21,23-29,32-55
+package.json
+  s_8175b701a15d89::t_3998378549db99 53
+  s_8175b701a15d89::t_352369a77bf2ce 52
+bun.lock
+  s_8175b701a15d89::t_4254d8c4692ba1 35-36,134-135,160-165,362-363,510-511,548-591,704-705,838-847,888-889,916,924-925,962-964,974-975,1064-1065,1092-1093,1098-1099,1298-1299,1350-1351,1370-1371,1374-1375,1412-1413,1526-1531,1536-1537,1544-1545,1564-1565,1570-1571
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "53c5b8efaf52a04d5afa632a1d0102f21676fd4f",
+  "prompts": {},
+  "humans": {
+    "h_aa1f579535d063": {
+      "author": "Celtian <dominik.hladik@seznam.cz>"
+    }
+  },
+  "sessions": {
+    "s_8175b701a15d89": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1007d-8cfc-74c0-ab2b-00058cc1ee65",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Celtian <dominik.hladik@seznam.cz>"
+    }
+  }
+}
