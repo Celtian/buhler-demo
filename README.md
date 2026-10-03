@@ -1,4 +1,4 @@
-# BuhlerDemo
+# 🏭 Bühler Demo
 
 The `/overview` page displays the Bühler bagging line in a machine navigation strip and a
 connected overview. Select a machine in either view to highlight it in both; selection does
@@ -10,46 +10,68 @@ Machine configuration and initial states are loaded from
 The header clock uses the browser's local time. Google Material icons are bundled locally,
 with their Apache license in `projects/portal/public/icons/`.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.2.1.
+The workspace contains the `portal` application and the `ui` library. Angular CLI is
+declared as `^22.2.1` in `package.json`; `bun.lock` records the resolved dependencies.
 
-## Development server
+## 🛠️ Installation
+
+Run the commands below from the repository root with both Node.js and Bun installed:
+
+- Node.js: `.nvmrc` selects **26**. With nvm, run `nvm install` and `nvm use`.
+  The `package.json` engine requirement is `>=24`; this is the declared minimum,
+  rather than the version selected by `.nvmrc`.
+- Bun: `packageManager` in `package.json` pins **1.4.2**. The declared Bun engine
+  range is `>=1.4.0 <2`. Use the pinned version for consistent installs.
+
+Bun is the configured package manager in `angular.json`, and the `postinstall`
+script invokes Bun to generate `generated/version-info.ts` from package and Git
+metadata. Keep the Git checkout available when installing dependencies. Node.js
+is still needed to run Angular CLI; installing Bun does not replace it.
+
+```bash
+bun install --frozen-lockfile
+```
+
+## 🚀 Development server
 
 To start a local development server, run:
 
 ```bash
-ng serve
+bun run start portal
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+## 🛠️ Code scaffolding
 
 Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
 ```bash
-ng generate component component-name
+bun run ng generate component component-name --project portal
 ```
 
 For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
 ```bash
-ng generate --help
+bun run ng generate --help
 ```
 
-## Building
+## 📦 Building
 
-To build the project run:
+Build the application and library separately:
 
 ```bash
-ng build
+bun run build portal
+bun run build ui
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+The portal output is `dist/portal/browser`; the library output is `dist/ui`.
+Both build targets default to the production configuration.
 
-## Progressive web app
+## 📱 Progressive web app
 
 The portal includes Angular service worker support, a web app manifest, and install icons,
-generated with `ng add @angular/pwa --project portal`. The service worker is enabled in
+configured in `angular.json` and `projects/portal/ngsw-config.json`. The service worker is enabled in
 production builds and disabled during development.
 
 Build with `bun run ng build portal` and serve `dist/portal/browser` over HTTPS (or localhost)
@@ -57,24 +79,29 @@ to test installation and offline use. After the first successful load and servic
 activation, the application shell and machine JSON fixtures are available offline. Image
 assets are cached when first requested. The included install icons are Angular CLI defaults.
 
-## Running unit tests
+## 🧪 Running unit tests
 
 To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
 
 ```bash
-ng test
+bun run test portal --watch=false
+bun run test ui --watch=false
 ```
 
-## Running end-to-end tests
+Omit `--watch=false` for interactive watch mode in a terminal. Tests use jsdom
+by default; no browser is configured.
 
-For end-to-end (e2e) testing, run:
+## 🧹 Lint
 
 ```bash
-ng e2e
+bun run lint
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## 🌐 Running end-to-end tests
 
-## Additional Resources
+Neither project has an end-to-end testing target configured. Add a testing
+framework and an `e2e` target before using `bun run ng e2e`.
+
+## 📚 Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
