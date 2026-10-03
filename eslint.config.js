@@ -3,6 +3,9 @@ const eslint = require('@eslint/js');
 const { defineConfig } = require('eslint/config');
 const tseslint = require('typescript-eslint');
 const angular = require('angular-eslint');
+const boundaries = /** @type {import('eslint').ESLint.Plugin} */ (
+  require('eslint-plugin-boundaries')
+);
 
 module.exports = defineConfig([
   {
@@ -14,7 +17,42 @@ module.exports = defineConfig([
       angular.configs.tsRecommended,
     ],
     processor: angular.processInlineTemplates,
+    plugins: { boundaries },
+    settings: {
+      'import/resolver': { typescript: { project: `${__dirname}/tsconfig.json` } },
+      'boundaries/root-path': __dirname,
+      'boundaries/elements': [
+        { type: 'portal', pattern: 'projects/portal/src/**' },
+        { type: 'ui', pattern: ['projects/ui/src/**', '@/ui'] },
+        { type: 'generated', pattern: ['generated/**', '@/generated/*'] },
+      ],
+    },
     rules: {
+      'max-lines': ['error', 750],
+      'boundaries/dependencies': [
+        'error',
+        {
+          default: 'disallow',
+          policies: [
+            {
+              from: { element: { types: 'portal' } },
+              allow: [
+                { to: { element: { types: 'portal' } } },
+                { to: { element: { types: 'ui' } } },
+                { to: { element: { types: 'generated' } } },
+              ],
+            },
+            {
+              from: { element: { types: 'ui' } },
+              allow: [{ to: { element: { types: 'ui' } } }],
+            },
+            {
+              from: { element: { types: 'generated' } },
+              allow: [{ to: { element: { types: 'generated' } } }],
+            },
+          ],
+        },
+      ],
       '@angular-eslint/directive-selector': [
         'error',
         {
