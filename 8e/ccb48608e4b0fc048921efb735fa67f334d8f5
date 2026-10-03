@@ -1,0 +1,28 @@
+projects/portal/src/app/features/overview/overview-page/overview-page.ts
+  s_1e74768bae05b6::t_f1d87a3b65db66 4,11
+projects/portal/src/app/features/not-found/not-found-page/not-found-page.html
+  h_aa1f579535d063 9
+projects/portal/src/app/features/overview/overview-page/overview-page.html
+  h_aa1f579535d063 10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "8eccb48608e4b0fc048921efb735fa67f334d8f5",
+  "prompts": {},
+  "humans": {
+    "h_aa1f579535d063": {
+      "author": "Celtian <dominik.hladik@seznam.cz>"
+    }
+  },
+  "sessions": {
+    "s_1e74768bae05b6": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a10092-a398-7552-a6f3-f44b5b556b8b",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Celtian <dominik.hladik@seznam.cz>"
+    }
+  }
+}
