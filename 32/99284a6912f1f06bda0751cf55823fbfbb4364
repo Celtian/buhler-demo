@@ -1,0 +1,36 @@
+README.md
+  s_00e23b126ce007::t_a40938e2dabbe1 1,16,19,31,33-35,45,56,59,71,82,94,97,100,105
+  s_a014c525ad4070::t_1eb13709ff93bc 13-14,18,20-30,32,40,50,61,64-65,68-69,74,87-88,91-92,102-103
+  s_a014c525ad4070::t_31a458e2dbeeb7 17,101
+projects/ui/README.md
+  s_a014c525ad4070::t_1eb13709ff93bc 3-5,12,18,26,29,51,56
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "3299284a6912f1f06bda0751cf55823fbfbb4364",
+  "prompts": {},
+  "humans": {
+    "h_aa1f579535d063": {
+      "author": "Celtian <dominik.hladik@seznam.cz>"
+    }
+  },
+  "sessions": {
+    "s_00e23b126ce007": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a10099-59fc-7440-b370-54ae30e58e63",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Celtian <dominik.hladik@seznam.cz>"
+    },
+    "s_a014c525ad4070": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1009b-3818-7b03-9ec1-fbad9b6ac5d1",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Celtian <dominik.hladik@seznam.cz>"
+    }
+  }
+}
