@@ -7,13 +7,7 @@
 } @else if (error()) {
   <div class="grid min-h-110 flex-1 content-center justify-items-center gap-5 p-8 text-center">
     <p role="alert">{{ error() }}</p>
-    <button
-      class="min-h-11 cursor-pointer bg-focus px-6 py-2 text-canvas"
-      type="button"
-      (click)="retry()"
-    >
-      Retry
-    </button>
+    <button ui-button color="primary" type="button" (click)="retry()">Retry</button>
   </div>
 } @else {
   <nav class="flex bg-surface max-sm:grid max-sm:grid-cols-2" aria-label="Production line machines">

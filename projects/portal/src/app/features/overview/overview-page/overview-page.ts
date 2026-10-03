@@ -1,14 +1,14 @@
 import { httpResource } from '@angular/common/http';
 import { Component, computed, linkedSignal } from '@angular/core';
 
-import { Spinner } from '@/ui';
+import { Button, Spinner } from '@/ui';
 
 import { Machine, MachineState, MachineView } from '../../../models/production-line.models';
 import { MachineButton } from '../machine-button/machine-button';
 
 @Component({
   selector: 'app-overview-page',
-  imports: [MachineButton, Spinner],
+  imports: [Button, MachineButton, Spinner],
   templateUrl: './overview-page.html',
   host: { class: 'flex flex-1 flex-col' },
 })
